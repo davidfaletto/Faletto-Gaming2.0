@@ -9,8 +9,7 @@ body {
 .menuInicio{                        /* El menu principal de Inicio */
     margin: 1em;
     padding: 1em;
-    list-style: none;
-    justify-content: center;        /* Contenido centrado */    
+    list-style: none;    
 }
 .menuInicio div a{                  /* Estilos para los links del menu Inicio */
     padding: 1em;
@@ -48,19 +47,12 @@ body {
     flex-flow: column wrap;
     background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);    /* Gradiente de fondo */
 }
-.imagenes{                          /* Contenedor de imagenes dentro del Area Central  estaran en filas que saltan a nueva fila centradas*/
-    display: flex;
-    flex-flow: row wrap;
+.imagenes{                          /* Contenedor de imagenes dentro del Area Central*/
     justify-content: center;
 }
-.imagenes img{                      /*Estilo de las imagenes dentro del contenedor con trnasiciones */
-    width: 20%;
+.imagenes img{            
     padding: 3%;
     border-radius: 4rem;
-    transition: width 0.4s;
-}
-.imagenes img:hover{
-        width: 22%;                 /* Agrandar imagenes al pasar cursor por encima width pasar de 20% a 25% en 0.4s */
 }
 .informe p{                         /* Estilo de los parrafos en contenedor central */
     text-align: center;
@@ -158,24 +150,13 @@ fieldset{                           /* Estilo para el campo del formulario */
     margin-left: 20%;
 }
 .listaDePrecios{                /* tabla de precios */
-    width: 450px;
     text-align: center;
-    color: #ffffff;
-    margin-left: 36%;
     padding: 3em;
 }
 .listaDePrecios table{
-    background-color: rgb(51, 47, 35);
-    border-radius: 1em;
+    background-color: rgb(102, 101, 99);
+    color: #ccc2c2;
 }
-.listaDePrecios table td{
-    border-radius: 1em;
-}
-.listaDePrecios table th{
-    border-radius: 1em;
-}
-.mapa iframe{               
-    border-radius: 1em;
-}    
+
     
 
