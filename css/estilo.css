@@ -5,11 +5,16 @@
 }
 body {
     background-image: url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2044");
-    }
+}
 .menuInicio{                        /* El menu principal de Inicio */
-    margin: 1em;
-    padding: 1em;
+    padding: 1rem;
     background-color: #000000;
+}
+.menuInicio a{
+    margin-left: 2rem;
+}
+.menuInicio a:hover{
+    text-decoration: underline;
 }
 .menuCategorias{                    /* Menu Lateral de Categorias */
     color: #000000;
@@ -36,6 +41,13 @@ body {
 
 .imagenes img{            
     padding: 3%;
+    width:25%;
+    height: 80%;
+    transition: all 1s;
+}
+.imagenes img:hover{
+    width: 27%;
+    height: 90%;
 }
 .informe p{                         /* Estilo de los parrafos en contenedor central */
     text-align: center;
