@@ -5,8 +5,8 @@
 }
 body {
     background-image: url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2044");
-    display: grid;
-    grid-template-areas:
+    display: grid;              /*  el body se vera en grillas */
+    grid-template-areas:        /* Defino el area de las grillas */
     "header header"
     "menu informe"
     "menu acercaDe"
@@ -14,16 +14,16 @@ body {
     "footer footer";
     align-items: center;
     }
-.menuInicio{
-    grid-area: header;
+.menuInicio{                        /* El menu principal de Inicio */
+    grid-area: header;              /* defino el nombre de las areas para luego llamarlas */
     margin: 1em;
     padding: 1em;
     list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    display: flex;                  /* El  menu sera del tipo flex*/
+    flex-flow: row wrap;            /* En filas que se saltan a nueva fila en caso de ser necesario */
+    justify-content: center;        /* Contenido centrado */    
 }
-.menuInicio div a{
+.menuInicio div a{                  /* Estilos para los links del menu Inicio */
     padding: 1em;
     margin-top: 1em;
     text-decoration: none;
@@ -31,89 +31,89 @@ body {
     background-color: #000000;
     border-radius: 10px;
 }
-.menuInicio div a:hover{
+.menuInicio div a:hover{            /* Estilos para Menu Inicio cuando paso el cursor por encima */
     text-decoration: none;
     color: #000000;
     background-color: #ffffff;
 }
     
-.menuCategorias{
-    grid-area: menu;
+.menuCategorias{                    /* Menu Lateral de Categorias */
+    grid-area: menu;                 /* defino el nombre de las areas para luego llamarlas */
     color: #000000;
 }
-.menuCategorias li{
+.menuCategorias li{                 /* Estilo de Menu Lateral */
     list-style: none;
     background-color: #dbd7d7;
     text-align: center;
     margin: 1%;
     padding: 1%;
 }
-.menuCategorias li:hover{
+.menuCategorias li:hover{           /* Estilo de Menu Lateral al pasar el cursor por encima */
     background-color: #000000;
     color: #dbd7d7;
 }
-.informe{
-    grid-area: informe;
+.informe{                           /* Area Central Principal Titulo, subtitulo e Imagenes */
+    grid-area: informe;             /* defino el nombre de las areas para luego llamarlas */
     padding: 2%;
     border-radius: 5% 2%;
     color: #ffffff;
-    display: flex;
+    display: flex;                  /* del tipo flexible en columnas wrap */
     flex-flow: column wrap;
-    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
+    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);    /* Gradiente de fondo */
 }
-.imagenes{
+.imagenes{                          /* Contenedor de imagenes dentro del Area Central  estaran en filas que saltan a nueva fila centradas*/
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-.imagenes img{
+.imagenes img{                      /*Estilo de las imagenes dentro del contenedor con trnasiciones */
     width: 20%;
     padding: 3%;
     border-radius: 4rem;
     transition: width 0.4s;
 }
 .imagenes img:hover{
-        width: 25%;
+        width: 22%;                 /* Agrandar imagenes al pasar cursor por encima width pasar de 20% a 25% en 0.4s */
 }
-.informe p{
+.informe p{                         /* Estilo de los parrafos en contenedor central */
     text-align: center;
     font-size: 20px;
     color: #ffffff;
 }
-.informe h1{
+.informe h1{                        /* Estilo de Titulo Principal */
     font-size: 40px;
     text-align: center;
 }
-.informe h2{
-    font-size: 30px;
+.informe h2{                        /* Estilo de los subtitulos */
+    font-size: 30px;            
     text-align: center;
     border:1px solid #000000;
     border-radius: 10px;
-}
-.pieDePagina{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
+}           
+.pieDePagina{                        /* Pie de pagina o footer */
+    grid-area: footer;              /* defino el nombre de las areas para luego llamarlas */
+    display: flex;                  /* sera del tipo flexible en filas que saltan en caso de ser necesario, centrado el contenido */
+    justify-content: center;    
     flex-flow: row wrap;
     color: #ffffff;
     padding: 1%;  
 }
-.pieDePagina a{
+.pieDePagina a{                     /* Estilo de links de pie de pagina */
     padding: 1%;
 }   
-.pieDePagina img{
+.pieDePagina img{                   /* Estilo de Imagenes de Pie de Pagina */
     border-radius: 8px;
 }
-.pieDePagina .logo{
+.pieDePagina .logo{                 /* Logo de Pie de Pagina con animacion */
     border-radius: 20% 20%;
     height: 70px;
-    animation-name: efecto_footer;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-name: efecto_footer;          /* Nombre de la animacion */
+    animation-iteration-count: infinite;    /* aca digo cuantas veces quiero que se repita la animacion */    
+    animation-timing-function: ease-in;     /* digo como debe avanzar con cada iteracion */
+    animation-duration: 2s;                 /* Duracion  */
+    animation-delay: 1s;                    /* tiempo de retraso antes de empezar a animar */
 }
-@keyframes efecto_footer {
+@keyframes efecto_footer {                  /* especifico a que elemento aplico animaciones con % */
     0%{height: 70px;}
     12%{height: 75px;}
     25%{height: 80px;}
@@ -124,32 +124,32 @@ body {
     87%{height: 75px;}
     100%{height: 70px;}
 }
-.pieDePagina .face{
+.pieDePagina .face{                 /* estilo a imagen de face de pie de pagina */
     border-radius: 50% 50%;
 }
-.pieDePagina p{
+.pieDePagina p{                     
     padding: 1%;
 }
-.about{
+.about{                             /* Estilo de la Pagina Acerca de Nosotros */
     color: rgb(255, 255, 255);
     padding: 3%;
     border-radius: 5em;
     text-align: center;
     background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
 }
-legend{
+legend{                             /* Estilo al texto relacionado con cada campo del formulario */
     text-align: center;
     color: #ffffff;
 }
-fieldset{
+fieldset{                           /* Estilo para el campo del formulario */
     border-radius: 2em;
     padding: 3rem;
     width: 75%;
 }
-.formularioDeContacto{
+.formularioDeContacto{              /* Contenedor del Formulario */
     width: 100%;
 }
-.botones .boton{
+.botones .boton{                    /* Botones del formulario */
     background-color: #000000;
     color: #ffffff;
     border: solid 0.2em #ffffff;
@@ -157,7 +157,7 @@ fieldset{
     padding: 0.5em;
     border-radius: 0.5em;
 }
-.botones .boton:hover{
+.botones .boton:hover{              /* Botones al pasar el cursor */
     background-color: rgb(255, 255, 255);
     color: #000000;
     border: solid 0.2em #ffffff;
@@ -165,19 +165,11 @@ fieldset{
     padding: 0.5em;
     border-radius: 0.5em;
 }
-.prod{
+.prod{                          /* Contenedor de la Pagina Productos */
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
     margin-left: 20%;
-}
-.prod .imagenDeProducto{
-    margin-top: 2% ;
-    width: 30%;
-    transition: width 0.3s;
-}
-.prod .imagenDeProducto:hover{
-    width: 40%;
 }
 .listaDePrecios{
     width: 450px;
