@@ -9,22 +9,17 @@ body {
 .menuInicio{                        /* El menu principal de Inicio */
     margin: 1em;
     padding: 1em;
-    list-style: none;    
+    list-style: none; 
 }
-.menuInicio div a{                  /* Estilos para los links del menu Inicio */
-    padding: 1em;
-    margin-top: 1em;
-    text-decoration: none;
-    color: #ffffff;
+.menuInicio a{
     background-color: #000000;
-    border-radius: 10px;
+    border: none;
 }
-.menuInicio div a:hover{            /* Estilos para Menu Inicio cuando paso el cursor por encima */
-    text-decoration: none;
-    color: #000000;
+.menuInicio a:hover{
     background-color: #ffffff;
+    color: #000000;
 }
-    
+
 .menuCategorias{                    /* Menu Lateral de Categorias */
     color: #000000;
 }
@@ -52,7 +47,6 @@ body {
 }
 .imagenes img{            
     padding: 3%;
-    border-radius: 4rem;
 }
 .informe p{                         /* Estilo de los parrafos en contenedor central */
     text-align: center;
@@ -111,7 +105,6 @@ body {
 .about{                             /* Estilo de la Pagina Acerca de Nosotros */
     color: rgb(255, 255, 255);
     padding: 3%;
-    border-radius: 5em;
     text-align: center;
     background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
 }
