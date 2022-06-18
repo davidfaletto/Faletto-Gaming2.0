@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Projecto Web</title>
+    <link rel="shortcut icon" href="../img/logoweb.png">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+
+</head>
+<body>
+    <header class="menuInicio">           <!-- Menu de la pagina web-->                      
+        <div><a href="../index.html">Inicio</a></div>
+        <div><a href="about.html">Sobre Nosotros</a></div>
+        <div><a href="ubicacion.html">Ubicacion</a></div>
+        <div><a href="contacto.html">Contacto</a></div>
+        <div><a href="productos.html">Productos</a></div>
+        <div><a href="https://www.google.com"><img src="../img/logo.png" width="22" alt="logo de google" ></a></div>  
+    </header>
+    <nav class="menuCategorias">
+        <ul>
+            <li>Equipos y Notebooks</li>                 
+            <li>Consolas de Video Juego</li>
+            <li>Procesadores y coolers cpus</li>
+            <li>Mothers y combos</li>
+            <li>Memorias Ram</li>
+            <li>Almacenamiento</li>
+            <li>Placas de Video y otras</li>
+            <li>Gabinetes, fuentes y coolers</li>
+            <li>Monitores y Televisores</li>
+            <li>Teclados y mouses</li>
+        </ul>
+    </nav> 
+    
+    <form class="formularioDeContacto">               <!-- formulario de contacto-->
+        <fieldset>       <!-- separa los campos del formulario-->
+            <legend>Datos Personales</legend>        <!--Le da un nombre a ese campo-->
+                <label for="apellido_nombre">Apellido y Nombre</label>
+                <input type="text" name="apellido_nombre"placeholder="David Faletto" required/>
+                <br />           <!-- 2 saltos de linea -->
+                <br />
+                <label for="edad">Edad en años</label> 
+                <input type="number" name="edad"/> <!-- Input para campo numerico -->
+                <br />
+                <br />
+                <label for="pais">Pais de Nacimiento</label>
+                <select name="pais">                                        <!-- Input para campo elegir una opcion menu desplegable -->
+                    <option value="elegir" selected>Elija un pais</option>
+                    <option value="arg" >Argentina</option>
+                    <option value="mex">Mexico</option>
+                    <option value="bra">Brasil</option>
+                    <option value="peru">Peru</option>
+                    <option value="Chile">Chile</option>
+                </select>
+                <br />
+                <br />
+                <label for="sexo">Seleccione su sexo</label>            <!-- Input del tipo Radio -->
+                    <div>Hombre
+                        <input type="radio" name="sexo" value="Hombre" />
+                    </div>
+                    <div>Mujer
+                        <input type="radio" name="sexo" value="Mujer" />
+                    </div>
+                <br />
+                <label for="mail">Ingrese su mail</label>
+                <input type="email" name="mail" placeholder="pepito@gmail.com" />
+        </fieldset>
+        <fieldset>
+            <legend>Gustos personales</legend>
+            <label for="que_color">Cual es tu color favorito</label>
+                <input type="color" name="que_color" />
+            <br />
+            <br />
+            <label for="marca">Que marca prefieres?</label>
+                <div>Msi
+                    <input type="checkbox" name="msi" />
+                </div>
+                <div>EVGA
+                    <input type="checkbox" name="evga" />
+                </div>
+                <div>Cosair
+                    <input type="checkbox" name="corsair" />
+                </div>
+                <div>Otro
+                    <input type="checkbox" name="otro" />
+                </div>
+        </fieldset>
+        <br />
+        <br />
+        <nav class="botones">
+            <input type="submit" value="Enviar Datos" class="boton">
+            <input type="reset" value="Borrar datos" class="boton">
+        </nav>    
+    </form>
+
+    <footer class="pieDePagina">
+        <img src="../img/logoweb.png" alt="logo de la web"  title="logo web" class="logo"/>
+        <p>
+        <b>Contacto</b> <br />
+        3815998877<br />
+        Av. Juan Bautista Alberdi 1233, C1424 CABA<br />
+        </p>
+        <a href="https://www.facebook.com"><img src="../img/facebook.png" alt="logo de face" width="40 px" class="face"/></a> 
+        <a href="https://www.instagram.com"><img src="../img/instagram.png" alt="logo de instagram" width="40 px"/></a> 
+        <a href="https://www.twitter.com"><img src="../img/twitter.png" alt="logo de twitter" width="40 px"/></a> 
+        
+    </footer>
+    <script src="js/wow.min.js"></script>
+        <script>
+              new WOW().init();
+         </script>
+    </body>
+</html>
