@@ -1,282 +1,58 @@
-*{
+*{                                      /* para toda la pagina normalizo margen, padding y tipo de fuente */
     margin: 0;
     padding: 0;
     font-family: 'Koulen', cursive;
 }
-@media screen and (min-width: 768px){
-    body {
-        background-image: url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2044");
-        display: grid;
-        grid-template-areas:
-        "header "
-        "menu"
-        "acercaDe"
-        "informe"
-        "footer";
-        align-items: center;
+body {
+    background-image: url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2044");
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu informe"
+    "menu acercaDe"
+    "menu mapa"
+    "footer footer";
+    align-items: center;
     }
-    .menuInicio{
-        grid-area: header;
-        margin: 1em;
-        padding: 1em;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .menuInicio div{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .menuInicio div a{
-        padding: 1em;
-        text-decoration: none;
-        color: #ffffff;
-        background-color: #000000;
-        border-radius: 10px;
-    }
-    
-    .menuInicio div a:hover{
-        text-decoration: none;
-        color: #000000;
-        background-color: #ffffff;
-    }
-    
-    .menuCategorias{
-        grid-area: menu;
-        color: #000000;
-    }
-    .menuCategorias li{
-        list-style: none;
-        background-color: #dbd7d7;
-        text-align: center;
-        margin: 1%;
-        padding: 1%;
-    }
-    .menuCategorias li:hover{
-        background-color: #000000;
-        color: #dbd7d7;
-    }
-    .informe{
-    grid-area: informe;
-    padding: 2%;
-    border-radius: 5% 2%;
-    color: #ffffff;
+.menuInicio{
+    grid-area: header;
+    margin: 1em;
+    padding: 1em;
+    list-style: none;
     display: flex;
-    flex-flow: column wrap;
-    background-image: linear-gradient(to bottom, #000000, #5a5555);
-    }
-    .imagenes{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    }
-    .imagenes img{
-        width: 70%;
-        margin-top: 3em;
-        padding: 3%;
-        border-radius: 4rem;
-        transition: width 0.4s;
-    }
-    .imagenes img:hover{
-        width: 80%;
-    }
-    .informe p{
-        text-align: center;
-        font-size: 20px;
-        color: #ffffff;
-    }
-    .informe h1{
-        font-size: 40px;
-        text-align: center;
-    }
-    .informe h2{
-        font-size: 30px;
-        text-align: center;
-        border:1px solid #000000;
-        border-radius: 10px;
-    }
-    .pieDePagina{
-        grid-area: footer;
-        display: flex;
-        justify-content: center;
-        flex-flow: row nowrap;
-        color: #ffffff;
-        padding: 1%;  
-    }
-    .pieDePagina a{
-        padding: 1%;
-        
-    }
-    
-    .pieDePagina img{
-        border-radius: 8px;
-    }
-    .pieDePagina .logo{
-        border-radius: 20% 20%;
-        height: 70px;
-        animation-name: efecto_footer;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 2s;
-        animation-delay: 1s;
-    }
-    @keyframes efecto_footer {
-        0%{height: 70px;}
-        12%{height: 75px;}
-        25%{height: 80px;}
-        42%{height: 90px;}
-        50%{height: 100px;}
-        62%{height: 90px;}
-        75%{height: 80px;}
-        87%{height: 75px;}
-        100%{height: 70px;}
-    }
-    .pieDePagina .face{
-        border-radius: 50% 50%;
-    }
-    .pieDePagina p{
-        padding: 1%;
-    }
-    .about{
-        grid-area: acercaDe;
-        color: rgb(255, 255, 255);
-        padding: 3%;
-        border-radius: 5em;
-        text-align: center;
-        background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
-    }
-    legend{
-        text-align: center;
-    }
-    fieldset{
-        background-color: rgb(0, 0, 0);
-        border-radius: 2em;
-        padding: 1em;
-    }
-    .formularioDeContacto{
-        color: #ffffff;
-        display: flex;
-        flex-flow: column wrap;
-        align-content:center;
-        justify-content: space-between ;
-    }
-    
-    .botones .boton{
-        background-color: #000000;
-        color: #ffffff;
-        border: solid 0.2em #ffffff;
-        width: 8em;
-        padding: 0.5em;
-        border-radius: 0.5em;
-    }
-    .botones .boton:hover{
-        background-color: rgb(255, 255, 255);
-        color: #000000;
-        border: solid 0.2em #ffffff;
-        width: 8em;
-        padding: 0.5em;
-        border-radius: 0.5em;
-    }
-    .prod{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .prod .imagenDeProducto{
-        margin-top: 2% ;
-        width: 50%;
-        margin: 3%;
-        transition: width 0.2s;
-    }
-    .prod .imagenDeProducto:hover{
-        width: 60%;
-     }
-    
-    .listaDePrecios{
-        text-align: center;
-        color: #ffffff;
-        padding: 3em;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-    .listaDePrecios table{
-        background-color: rgb(51, 47, 35);
-        border-radius: 1em;
-    }
-    .listaDePrecios table td{
-        border-radius: 1em;
-    }
-    .listaDePrecios table th{
-        border-radius: 1em;
-    }
-    .mapa{
-        padding: 2em;
-        display: flex;
-        justify-content: center;
-    }
-    .mapa iframe{
-        border-radius: 1em;
-    }    
-    
+    flex-flow: row wrap;
+    justify-content: center;
 }
-@media screen and (min-width: 1024px){
-    body {
-        background-image: url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2044");
-        display: grid;
-        grid-template-areas:
-        "header header"
-        "menu informe"
-        "menu acercaDe"
-        "menu mapa"
-        "footer footer";
-        align-items: center;
-    }
-    .menuInicio{
-        grid-area: header;
-        margin: 1em;
-        padding: 1em;
-        list-style: none;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        
-    }
-    .menuInicio div a{
-        padding: 1em;
-        margin-top: 1em;
-        text-decoration: none;
-        color: #ffffff;
-        background-color: #000000;
-        border-radius: 10px;
-    }
+.menuInicio div a{
+    padding: 1em;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
+}
+.menuInicio div a:hover{
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
     
-    .menuInicio div a:hover{
-        text-decoration: none;
-        color: #000000;
-        background-color: #ffffff;
-    }
-    
-    .menuCategorias{
-        grid-area: menu;
-        color: #000000;
-    }
-    .menuCategorias li{
-        list-style: none;
-        background-color: #dbd7d7;
-        text-align: center;
-        margin: 1%;
-        padding: 1%;
-    }
-    .menuCategorias li:hover{
-        background-color: #000000;
-        color: #dbd7d7;
-    }
-    .informe{
+.menuCategorias{
+    grid-area: menu;
+    color: #000000;
+}
+.menuCategorias li{
+    list-style: none;
+    background-color: #dbd7d7;
+    text-align: center;
+    margin: 1%;
+    padding: 1%;
+}
+.menuCategorias li:hover{
+    background-color: #000000;
+    color: #dbd7d7;
+}
+.informe{
     grid-area: informe;
     padding: 2%;
     border-radius: 5% 2%;
@@ -284,150 +60,147 @@
     display: flex;
     flex-flow: column wrap;
     background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
-    }
-    .imagenes{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-    }
-    .imagenes img{
-        width: 20%;
-        padding: 3%;
-        border-radius: 4rem;
-        transition: width 0.4s;
-    }
-    .imagenes img:hover{
-        width: 25%;
-    }
-    
-    .informe p{
-        text-align: center;
-        font-size: 20px;
-        color: #ffffff;
-    }
-    .informe h1{
-        font-size: 40px;
-        text-align: center;
-    }
-    .informe h2{
-        font-size: 30px;
-        text-align: center;
-        border:1px solid #000000;
-        border-radius: 10px;
-    }
-    .pieDePagina{
-        grid-area: footer;
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        color: #ffffff;
-        padding: 1%;  
-    }
-    .pieDePagina a{
-        padding: 1%;
-    }
-   
-    .pieDePagina img{
-        border-radius: 8px;
-    }
-    .pieDePagina .logo{
-        border-radius: 20% 20%;
-        height: 70px;
-        animation-name: efecto_footer;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 2s;
-        animation-delay: 1s;
-    }
-    @keyframes efecto_footer {
-        0%{height: 70px;}
-        12%{height: 75px;}
-        25%{height: 80px;}
-        42%{height: 90px;}
-        50%{height: 100px;}
-        62%{height: 90px;}
-        75%{height: 80px;}
-        87%{height: 75px;}
-        100%{height: 70px;}
-    }
-    .pieDePagina .face{
-        border-radius: 50% 50%;
-    }
-    .pieDePagina p{
-        padding: 1%;
-    }
-    .about{
-        color: rgb(255, 255, 255);
-        padding: 3%;
-        border-radius: 5em;
-        text-align: center;
-        background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
-    }
-    legend{
-        text-align: center;
-        color: #ffffff;
-    }
-    fieldset{
-        border-radius: 2em;
-        padding: 3rem;
-        width: 75%;
-    }
-    .formularioDeContacto{
-        width: 100%;
-    }
-    
-    .botones .boton{
-        background-color: #000000;
-        color: #ffffff;
-        border: solid 0.2em #ffffff;
-        width: 8em;
-        padding: 0.5em;
-        border-radius: 0.5em;
-    }
-    .botones .boton:hover{
-        background-color: rgb(255, 255, 255);
-        color: #000000;
-        border: solid 0.2em #ffffff;
-        width: 8em;
-        padding: 0.5em;
-        border-radius: 0.5em;
-    }
-    .prod{
-        display: flex;
-        flex-flow: row wrap;
-        align-items: flex-start;
-        margin-left: 20%;
-    }
-    .prod .imagenDeProducto{
-        margin-top: 2% ;
-        width: 30%;
-        transition: width 0.3s;
-    }
-    .prod .imagenDeProducto:hover{
-        width: 40%;
-    }
-    .listaDePrecios{
-        width: 450px;
-        text-align: center;
-        color: #ffffff;
-        margin-left: 36%;
-        padding: 3em;
-    }
-    .listaDePrecios table{
-        background-color: rgb(51, 47, 35);
-        border-radius: 1em;
-    }
-    .listaDePrecios table td{
-        border-radius: 1em;
-    }
-    .listaDePrecios table th{
-        border-radius: 1em;
-    }
-    .mapa{
-        grid-area: mapa;
-    }
-    .mapa iframe{
-        border-radius: 1em;
-    }    
-    
 }
+.imagenes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.imagenes img{
+    width: 20%;
+    padding: 3%;
+    border-radius: 4rem;
+    transition: width 0.4s;
+}
+.imagenes img:hover{
+        width: 25%;
+}
+.informe p{
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+.informe h1{
+    font-size: 40px;
+    text-align: center;
+}
+.informe h2{
+    font-size: 30px;
+    text-align: center;
+    border:1px solid #000000;
+    border-radius: 10px;
+}
+.pieDePagina{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    color: #ffffff;
+    padding: 1%;  
+}
+.pieDePagina a{
+    padding: 1%;
+}   
+.pieDePagina img{
+    border-radius: 8px;
+}
+.pieDePagina .logo{
+    border-radius: 20% 20%;
+    height: 70px;
+    animation-name: efecto_footer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+@keyframes efecto_footer {
+    0%{height: 70px;}
+    12%{height: 75px;}
+    25%{height: 80px;}
+    42%{height: 90px;}
+    50%{height: 100px;}
+    62%{height: 90px;}
+    75%{height: 80px;}
+    87%{height: 75px;}
+    100%{height: 70px;}
+}
+.pieDePagina .face{
+    border-radius: 50% 50%;
+}
+.pieDePagina p{
+    padding: 1%;
+}
+.about{
+    color: rgb(255, 255, 255);
+    padding: 3%;
+    border-radius: 5em;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
+}
+legend{
+    text-align: center;
+    color: #ffffff;
+}
+fieldset{
+    border-radius: 2em;
+    padding: 3rem;
+    width: 75%;
+}
+.formularioDeContacto{
+    width: 100%;
+}
+.botones .boton{
+    background-color: #000000;
+    color: #ffffff;
+    border: solid 0.2em #ffffff;
+    width: 8em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.botones .boton:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    border: solid 0.2em #ffffff;
+    width: 8em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.prod{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-left: 20%;
+}
+.prod .imagenDeProducto{
+    margin-top: 2% ;
+    width: 30%;
+    transition: width 0.3s;
+}
+.prod .imagenDeProducto:hover{
+    width: 40%;
+}
+.listaDePrecios{
+    width: 450px;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 36%;
+    padding: 3em;
+}
+.listaDePrecios table{
+    background-color: rgb(51, 47, 35);
+    border-radius: 1em;
+}
+.listaDePrecios table td{
+    border-radius: 1em;
+}
+.listaDePrecios table th{
+    border-radius: 1em;
+}
+.mapa{
+    grid-area: mapa;
+}
+.mapa iframe{
+    border-radius: 1em;
+}    
+    
+
