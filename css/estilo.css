@@ -171,7 +171,7 @@ fieldset{                           /* Estilo para el campo del formulario */
     align-items: flex-start;
     margin-left: 20%;
 }
-.listaDePrecios{
+.listaDePrecios{                /* tabla de precios */
     width: 450px;
     text-align: center;
     color: #ffffff;
@@ -188,10 +188,10 @@ fieldset{                           /* Estilo para el campo del formulario */
 .listaDePrecios table th{
     border-radius: 1em;
 }
-.mapa{
-    grid-area: mapa;
+.mapa{                      /* Mapa  */
+    grid-area: mapa;        /* Detallo nombre del area */
 }
-.mapa iframe{
+.mapa iframe{               
     border-radius: 1em;
 }    
     
