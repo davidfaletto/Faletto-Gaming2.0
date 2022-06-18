@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Projecto Web</title>
     <link rel="shortcut icon" href="img/logoweb.png">                                           <!-- Logo en la parte de arriba del navegador -->
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">                               <!-- link hacia mi css -->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">                               <!-- link hacia mi css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">                                 <!-- agregar la fuente desde google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                        <!-- agregar la fuente desde google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet"> <!-- agregar la fuente desde google fonts-->
@@ -13,13 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">                          <!-- tag para asegurarnos que la pagina sea responsive -->  
 </head>
 <body>
-    <header class="menuInicio">           <!-- Menu de la pagina web-->                      
-        <div><a href="../index.html">Inicio</a></div>
-        <div><a href="about.html">Sobre Nosotros</a></div>
-        <div><a href="ubicacion.html">Ubicacion</a></div>
-        <div><a href="contacto.html">Contacto</a></div>
-        <div><a href="productos.html">Productos</a></div>
-        <div><a href="https://www.google.com"><img src="../img/logo.png" width="22" alt="logo de google" ></a></div>  
+    <header class="container-fluid menuInicio">           <!-- Menu de la pagina web-->
+        <div class="row">                      
+            <div class="col-md-2"><a href="../index.html">Inicio</a></div>
+            <div class="col-md-2"><a href="../pages/about.html">Sobre Nosotros</a></div>
+            <div class="col-md-2"><a href="../pages/ubicacion.html">Ubicacion</a></div>
+            <div class="col-md-2"><a href="../pages/contacto.html">Contacto</a></div>
+            <div class="col-md-2"><a href="../pages/productos.html">Productos</a></div>
+            <div class="col-md-2"><a href="https://www.google.com"><img src="../img/logo.png" width="22" alt="logo de google" ></a></div> 
+        </div>     
     </header>
     <nav class="menuCategorias"> <!-- Menu de las categorias-->  
         <ul>

@@ -5,22 +5,11 @@
 }
 body {
     background-image: url("https://images.unsplash.com/photo-1510906594845-bc082582c8cc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2044");
-    display: grid;              /*  el body se vera en grillas */
-    grid-template-areas:        /* Defino el area de las grillas */
-    "header header"
-    "menu informe"
-    "menu acercaDe"
-    "menu mapa"
-    "footer footer";
-    align-items: center;
     }
 .menuInicio{                        /* El menu principal de Inicio */
-    grid-area: header;              /* defino el nombre de las areas para luego llamarlas */
     margin: 1em;
     padding: 1em;
     list-style: none;
-    display: flex;                  /* El  menu sera del tipo flex*/
-    flex-flow: row wrap;            /* En filas que se saltan a nueva fila en caso de ser necesario */
     justify-content: center;        /* Contenido centrado */    
 }
 .menuInicio div a{                  /* Estilos para los links del menu Inicio */
@@ -38,7 +27,6 @@ body {
 }
     
 .menuCategorias{                    /* Menu Lateral de Categorias */
-    grid-area: menu;                 /* defino el nombre de las areas para luego llamarlas */
     color: #000000;
 }
 .menuCategorias li{                 /* Estilo de Menu Lateral */
@@ -53,7 +41,6 @@ body {
     color: #dbd7d7;
 }
 .informe{                           /* Area Central Principal Titulo, subtitulo e Imagenes */
-    grid-area: informe;             /* defino el nombre de las areas para luego llamarlas */
     padding: 2%;
     border-radius: 5% 2%;
     color: #ffffff;
@@ -91,7 +78,6 @@ body {
     border-radius: 10px;
 }           
 .pieDePagina{                        /* Pie de pagina o footer */
-    grid-area: footer;              /* defino el nombre de las areas para luego llamarlas */
     display: flex;                  /* sera del tipo flexible en filas que saltan en caso de ser necesario, centrado el contenido */
     justify-content: center;    
     flex-flow: row wrap;
@@ -187,9 +173,6 @@ fieldset{                           /* Estilo para el campo del formulario */
 }
 .listaDePrecios table th{
     border-radius: 1em;
-}
-.mapa{                      /* Mapa  */
-    grid-area: mapa;        /* Detallo nombre del area */
 }
 .mapa iframe{               
     border-radius: 1em;
