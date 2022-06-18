@@ -9,17 +9,8 @@ body {
 .menuInicio{                        /* El menu principal de Inicio */
     margin: 1em;
     padding: 1em;
-    list-style: none; 
-}
-.menuInicio a{
     background-color: #000000;
-    border: none;
 }
-.menuInicio a:hover{
-    background-color: #ffffff;
-    color: #000000;
-}
-
 .menuCategorias{                    /* Menu Lateral de Categorias */
     color: #000000;
 }
@@ -42,9 +33,7 @@ body {
     flex-flow: column wrap;
     background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);    /* Gradiente de fondo */
 }
-.imagenes{                          /* Contenedor de imagenes dentro del Area Central*/
-    justify-content: center;
-}
+
 .imagenes img{            
     padding: 3%;
 }
