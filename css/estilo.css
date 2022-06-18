@@ -78,24 +78,9 @@ body {
 }
 .pieDePagina .logo{                 /* Logo de Pie de Pagina con animacion */
     border-radius: 20% 20%;
-    height: 70px;
-    animation-name: efecto_footer;          /* Nombre de la animacion */
-    animation-iteration-count: infinite;    /* aca digo cuantas veces quiero que se repita la animacion */    
-    animation-timing-function: ease-in;     /* digo como debe avanzar con cada iteracion */
-    animation-duration: 2s;                 /* Duracion  */
-    animation-delay: 1s;                    /* tiempo de retraso antes de empezar a animar */
+    height: 70px;                 
 }
-@keyframes efecto_footer {                  /* especifico a que elemento aplico animaciones con % */
-    0%{height: 70px;}
-    12%{height: 75px;}
-    25%{height: 80px;}
-    42%{height: 90px;}
-    50%{height: 100px;}
-    62%{height: 90px;}
-    75%{height: 80px;}
-    87%{height: 75px;}
-    100%{height: 70px;}
-}
+
 .pieDePagina .face{                 /* estilo a imagen de face de pie de pagina */
     border-radius: 50% 50%;
 }
@@ -150,6 +135,3 @@ fieldset{                           /* Estilo para el campo del formulario */
     background-color: rgb(102, 101, 99);
     color: #ccc2c2;
 }
-
-    
-
