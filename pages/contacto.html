@@ -53,7 +53,7 @@
                 <li>Teclados y mouses</li>
             </ul>
         </div>
-        <div class="col col-xs-12">
+        <div class="col-lg-8 col-xs-12">
             <form class="formularioDeContacto ">               <!-- formulario de contacto-->
                 <fieldset>       <!-- separa los campos del formulario-->
                     <legend>Datos Personales</legend>        <!--Le da un nombre a ese campo-->
@@ -65,7 +65,7 @@
                         <input type="number" name="edad" class="form-control"/> <!-- Input para campo numerico -->
     
                         <label for="pais">Pais de Nacimiento</label>
-                        <select name="pais">                                        <!-- Input para campo elegir una opcion menu desplegable -->
+                        <select name="pais" class="form-select">                                        <!-- Input para campo elegir una opcion menu desplegable -->
                             <option value="elegir" selected>Elija un pais</option>
                             <option value="arg" >Argentina</option>
                             <option value="mex">Mexico</option>
@@ -89,7 +89,7 @@
                 <fieldset>
                     <legend>Gustos personales</legend>
                     <label for="que_color" class="form-label">Cual es tu color favorito</label>
-                        <input type="color" name="que_color" />
+                        <input type="color" name="que_color" class="form-control form-control-color"/>
                     <br />
                     <br />
                     <label for="marca" class="form-label">Que marca prefieres?</label>
