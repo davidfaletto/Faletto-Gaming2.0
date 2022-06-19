@@ -41,13 +41,11 @@ body {
 
 .imagenes img{            
     padding: 3%;
-    width:25%;
-    height: 80%;
+    width:80%;
     transition: all 1s;
 }
 .imagenes img:hover{
-    width: 27%;
-    height: 90%;
+    width: 90%;
 }
 .informe p{                         /* Estilo de los parrafos en contenedor central */
     text-align: center;
