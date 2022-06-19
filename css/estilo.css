@@ -121,8 +121,6 @@ fieldset{                           /* Estilo para el campo del formulario */
     border-radius: 0.5em;
 }
 .listaDePrecios{                /* tabla de precios */
-    display: flex;
-    align-items: center;
     text-align: center;
     padding: 5rem;
 }
