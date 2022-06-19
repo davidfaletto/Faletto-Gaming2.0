@@ -104,21 +104,11 @@ fieldset{                           /* Estilo para el campo del formulario */
     width: 100%;
     color: #ffffff;
 }
-.botones .boton{                    /* Botones del formulario */
-    background-color: #000000;
-    color: #ffffff;
-    border: solid 0.2em #ffffff;
-    width: 8em;
-    padding: 0.5em;
-    border-radius: 0.5em;
+.botones .btn{
+
 }
-.botones .boton:hover{              /* Botones al pasar el cursor */
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-    border: solid 0.2em #ffffff;
-    width: 8em;
-    padding: 0.5em;
-    border-radius: 0.5em;
+.botones .btn:hover{
+    text-decoration: underline;
 }
 .listaDePrecios{                /* tabla de precios */
     text-align: center;

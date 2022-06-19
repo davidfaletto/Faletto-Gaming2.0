@@ -59,7 +59,7 @@
                     <legend>Datos Personales</legend>        <!--Le da un nombre a ese campo-->
 
                         <label for="apellido_nombre" class="form-label">Apellido y Nombre</label>
-                        <input type="text" name="apellido_nombre" placeholder="David Faletto" required class="form-control"/>
+                        <input type="text" name="apellido_nombre" placeholder="David Faletto" required class="form-control "/>
 
                         <label for="edad" class="form-label">Edad en años</label> 
                         <input type="number" name="edad" class="form-control"/> <!-- Input para campo numerico -->
@@ -108,12 +108,15 @@
                 </fieldset>
                 <br />
                 <br />
-                <nav class="botones">
-                    <input type="submit" value="Enviar Datos" class="boton">
-                    <input type="reset" value="Borrar datos" class="boton">
+                <nav class="botones row justify-content-center" >
+                    <button type="submit" class="btn btn-dark col-lg-1" value="Enviar Datos">Enviar</button>
+                    <button type="reset" value="Borrar Datos"class="btn btn-dark col-lg-1">Borrar</button>
                 </nav>    
             </form>
-        </div>    
+        </div>
+        <aside class="col-lg-2">
+            <img src="../img/aside.jpg"/>
+        </aside>      
     </article>
     <footer class="pieDePagina">
        <!--  <img src="../img/logoweb.png" alt="logo de la web"  title="logo web" class="logo"/> -->
