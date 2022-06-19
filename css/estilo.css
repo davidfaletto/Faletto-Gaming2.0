@@ -38,7 +38,6 @@ body {
     flex-flow: column wrap;
     background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);    /* Gradiente de fondo */
 }
-
 .imagenes img{            
     padding: 3%;
     width:80%;
@@ -120,15 +119,9 @@ fieldset{                           /* Estilo para el campo del formulario */
     padding: 0.5em;
     border-radius: 0.5em;
 }
-.prod{                          /* Contenedor de la Pagina Productos */
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    margin-left: 20%;
-}
 .listaDePrecios{                /* tabla de precios */
     text-align: center;
-    padding: 3em;
+    padding: 5rem;
 }
 .listaDePrecios table{
     background-color: rgb(102, 101, 99);
