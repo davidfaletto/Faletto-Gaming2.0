@@ -46,7 +46,7 @@ body {
 .imagenes img:hover{
     width: 85%;
 }
-.imagenes .card{
+.imagenes .card{                                                                    /* Cards del index */
     background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
     text-align: center;
     align-items: center;
@@ -54,7 +54,7 @@ body {
 .imagenes .card:hover{
     background-image: linear-gradient(to bottom, #5a5a5a, #000000, #5a5a5a);
 }
-.imagenes .card a{
+.imagenes .card a{                                                                 /* Links a la compra del card */
     background-color: #000000;
     border: 1px solid #ffffff;
 }
