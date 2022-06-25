@@ -55,6 +55,12 @@ body {
     background-image: linear-gradient(to bottom, #5a5a5a, #000000, #5a5a5a);
 }
 .imagenes .card a{
+    background-color: #000000;
+    border: 1px solid #ffffff;
+}
+.imagenes .card a:hover{
+    background-color: #1f1c1c;
+    border: none;
 }
 .informe p{                         /* Estilo de los parrafos en contenedor central */
     text-align: center;
@@ -115,7 +121,6 @@ fieldset{                           /* Estilo para el campo del formulario */
     color: #ffffff;
 }
 .botones .btn{
-
 }
 .botones .btn:hover{
     text-decoration: underline;
