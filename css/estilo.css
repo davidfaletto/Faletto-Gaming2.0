@@ -44,7 +44,17 @@ body {
     transition: all 1s;
 }
 .imagenes img:hover{
-    width: 90%;
+    width: 85%;
+}
+.imagenes .card{
+    background-image: linear-gradient(to bottom, #000000, #5a5555, #000000);
+    text-align: center;
+    align-items: center;
+}
+.imagenes .card:hover{
+    background-image: linear-gradient(to bottom, #5a5a5a, #000000, #5a5a5a);
+}
+.imagenes .card a{
 }
 .informe p{                         /* Estilo de los parrafos en contenedor central */
     text-align: center;
